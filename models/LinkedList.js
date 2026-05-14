@@ -47,7 +47,27 @@ class LinkedList{
         this.#qtd++;
         return true;
     }
+// ---------------------------------------------------
+    addAtIndex(novoDado, posicao){
+        if(this.isEmpty()||posicao<=0)
+            return this.addFirst(novoDado);
+        if(posicao >= this.#qtd)
+            return this.addLast(novoDado);
+        const novoNo= new No(novoDado);
+        let aux=this.#head; // aux sai do inicio
+        let posAtual=0;
+        while(posAtual < posicao -1){
+            aux=aux.proximo;
+            posAtual++;
+        }
+        novoNo.anterior=aux;
+        novoDado.proximo=aux.proximo;
+        novoNo.proximo.anterior=novoNo;
+        this.#qtd++;
+        return true;
 
+}
+//--------------------------------------------------------------
 
     removeFirst(){
         if(this.isEmpty())
