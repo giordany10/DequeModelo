@@ -130,6 +130,18 @@ class LinkedList{
         }
    //---------------- 
      }     
+     getLast(){
+        if(!this.isEmpty())
+            return this.#tail.dado;
+        else 
+            return null;
  }
+ getFirst(){
+     if(!this.isEmpty())
+            return this.#head.dado;
+        else 
+            return null;
+    }
+}
 
 
