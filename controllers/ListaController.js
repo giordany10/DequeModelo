@@ -36,7 +36,13 @@ function leiaDadosTarefa() {
   }
   //--------------------------------------------------------------------------------------------
   function adicionarIndice() {
-    //implemente
+    const novaTarefa = leiaDadosTarefa();
+        const indice = parseInt(document.getElementById("txtIndice").value.trim());
+    minhaLista.addAtIndex(novaTarefa,indice);
+    alert("Inserido no indice "+indice);
+    atualizarLista();
+    limpaInputs();
+
   }
 //--------------------------------------------------------------------------------------------
  // Função para remover o primeiro elemento da lista
