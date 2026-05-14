@@ -25,6 +25,22 @@ function leiaDadosTarefa() {
         atualizarLista();
         limpaInputs();
     }
+    function adicionarElementoPorPrioridade(){
+      const novaTarefa = leiaDadosTarefa();
+      if(novaTarefa.prioridade>= minhaLista.getLast.prioridade);
+      minhaLista.addLast(novaTarefa);
+      //..............
+      //percorrer
+      let pos=0;
+      for(const tarefa of minhaLista)
+        //prioridade nova> prioridade atual
+      //pos ++
+      //sai for
+      //inserir addAtindex(novoDado,pos);
+
+
+
+    }
  }
  //------------------------------------------------------------------------------------------------------
   function adicionarElementoFinal() {
